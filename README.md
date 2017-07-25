@@ -13,7 +13,7 @@ O prazo de entrega é até dia **02/08/2017**
     * Colocar máscaras e validação no formulário.
 4. Crie um fork e submeta ao github;
 
-Quando terminar, envie o mesmo para [letsrock@owinteractive.com](letsrock@owinteractive.com), com o assunto [DESAFIO FRONT-END]
+Quando terminar, envie o mesmo para **letsrock@owinteractive.com**, com o assunto [DESAFIO FRONT-END]
 
 Obs1: O conteúdo da página pode ser estático.
 
