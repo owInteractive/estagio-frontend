@@ -1,5 +1,4 @@
 # estagio-frontend
-
 Essa prova vai testar seus conhecimentos em HTML, CSS, JavaScript entre outros. Está preparado?
 
 O conjunto de testes disponibilizado tem o prazo de 3 dias, então melhor já começar!
