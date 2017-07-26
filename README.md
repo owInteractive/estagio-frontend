@@ -22,4 +22,4 @@ Obs2: A utilização de Frameworks HTML/CSS é de livre escolha.
 **Diferenciais:**
 * Crie a versão mobile (é um ótimo bônus)
 * Documente seu código
-* Desenvolva HTML semântic
+* Desenvolva HTML semântico
