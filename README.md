@@ -1,8 +1,6 @@
 # Desafio Front-end OW Interactive
 Essa prova vai testar seus conhecimentos em HTML, CSS, JavaScript entre outros. Está preparado(a)?
 
-O prazo de entrega é até dia **02/08/2017**
-
 **Instruções:**
 
 1. Faça o download do arquivo [(desafio-frontend.zip)](https://github.com/owInteractive/estagio-frontend/raw/master/desafio-frontend.zip);
