@@ -1,0 +1,22 @@
+{
+  "name": "estagio-frontend",
+  "version": "1.0.0",
+  "description": "Essa prova vai testar seus conhecimentos em HTML, CSS, JavaScript entre outros. Está preparado(a)?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CibaYumi/estagio-frontend.git"
+  },
+  "author": "cibele.yumi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CibaYumi/estagio-frontend/issues"
+  },
+  "homepage": "https://github.com/CibaYumi/estagio-frontend#readme",
+  "dependencies": {
+    "bootstrap": "^4.2.1"
+  }
+}
