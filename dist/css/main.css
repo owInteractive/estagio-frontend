@@ -48,14 +48,14 @@ button {
   color: #a67b52;
 }
 
-/* CAROUSEL */
-.carousel {
+/* BANNER CAROUSEL */
+.banner.carousel {
   height: 300px;
 }
-.carousel .carousel-indicators {
+.banner.carousel .carousel-indicators {
   bottom: 90px;
 }
-.carousel-indicators li {
+.banner .carousel-indicators li {
   box-sizing: content-box;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
@@ -72,36 +72,36 @@ button {
   opacity: .5;
   transition: opacity .6s ease;
 }
-.carousel-indicators li.active {
+.banner .carousel-indicators li.active {
   opacity: 1;
   background-color: #fff;
 }
-.carousel .carousel-inner,
-.carousel .carousel-inner .carousel-item {
+.banner.carousel .carousel-inner,
+.banner.carousel .carousel-inner .carousel-item {
   height: 100%;
 }
-.carousel .carousel-inner .carousel-item.first {
+.banner.carousel .carousel-inner .carousel-item.first {
   background-image: url('../../assets/imgs/banner1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-.carousel .carousel-inner .carousel-item.second {
+.banner.carousel .carousel-inner .carousel-item.second {
   background-image: url('../../assets/imgs/banner2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-.carousel .carousel-inner .carousel-item.third {
+.banner.carousel .carousel-inner .carousel-item.third {
   background-image: url('../../assets/imgs/banner3.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-.carousel .carousel-inner .carousel-item .bg_shadow {
+.banner.carousel .carousel-inner .carousel-item .bg_shadow {
   background-color: rgb(86, 69, 57);
   opacity: 0.8;
   position: absolute;
@@ -111,9 +111,7 @@ button {
   height: 100%;
 }
 
-.gallery {
-
-}
+/* GALLERY */
 .gallery .container .row .col-sm h2 {
   text-transform: uppercase;
   color: #fff;
@@ -184,10 +182,9 @@ button {
 /* ABOUT SECTION */
 .about {
   height: 350px;
+  margin-bottom: 10vh;
 }
-.about .container {
-  height: 100%;
-}
+.about .container,
 .about .container .row {
   height: 100%;
 }
@@ -211,6 +208,7 @@ button {
   font-size: .9rem;
   font-weight: 100;
   color: #000;
+  text-align: justify;
 }
 .about .container .row .description a {
   font-size: .9rem;
@@ -237,6 +235,7 @@ button {
   font-weight: 100;
   color: #000;
   margin-bottom: 20px;
+  text-align: justify;
 }
 .about .container .row .news p:last-child {
   margin-bottom: 0 !important;
@@ -252,33 +251,148 @@ button {
   color: #a67b52;
   text-decoration: none;
 }
+.about .container .row .news a.btn_list {
+  float: right;
+}
 .about .container .row .news a:hover {
   border-bottom: 1px solid #a67b52;
 }
 
-.jumbotron {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-bottom: 0;
+/* PARTNERS CAROUSEL */
+.partners {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background-color: #f4f4f4;
+}
+.partners .container .row h2 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 8vh;
+}
+.partners .container .row .carousel {
+  height: 26vh;
+}
+.partners .container .row .carousel .carousel-indicators li {
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #a67b52!important;
+  margin-right: 6px;
+  margin-left: 6px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: transparent;
+  background-clip: padding-box;
+  opacity: .5;
+  transition: opacity .6s ease;
+}
+.partners .container .row .carousel .carousel-indicators li.active {
+  opacity: 1;
+  background-color: #a67b52;
+}
+.partners .container .row .carousel .carousel-inner .carousel-item {
+  height: 100%;
+  position: relative;
+}
+.partners .container .row .carousel .carousel-inner .carousel-item .col-3 {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+.partners .container .row .carousel .carousel-inner .carousel-item .col-3 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: auto;
+  max-width: 80%;
+  width: auto;
+  max-height: 80%;
+}
+
+/* CONTACT */
+.contact {
+  padding-top: 10vh;
+}
+.contact .container .row h2 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #403225;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+.contact .container .row p {
+  font-size: .9rem;
+  font-weight: 100;
+  color: #000;
+  text-align: justify;
+}
+.contact .container .row form {
+  margin: 5vh 0;
+}
+.contact .container .row form .row .col-lg-6.left {
+  padding-left: 0;
+}
+.contact .container .row form .row .col-lg-6.right {
+  padding-right: 0;
+}
+.contact .container .row form .row .col-lg-6 .form-group label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.contact .container .row form .row .col-lg-6 .form-group input,
+.contact .container .row form .row .col-lg-6 .form-group textarea {
+  border-radius: 0;
+  border: 2px solid #d7d7d7;
+  outline: 0;
+}
+.contact .container .row form .row .col-lg-6 .form-group textarea {
+  resize: none;
+}
+.contact .container .row form .row .col-lg-6 .form-group input:focus,
+.contact .container .row form .row .col-lg-6 .form-group textarea:focus {
+  color: #000;
   background-color: #fff;
+  border-color: #a67b52;
+  outline: 0;
+  box-shadow: none;
 }
-@media (min-width: 768px) {
-  .jumbotron {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
+.contact .container .row form .row .col-lg-6 .form-group input::placeholder,
+.contact .container .row form .row .col-lg-6 .form-group textarea::placeholder {
+  color: #a5a5a5;
+  opacity: 1;
 }
-
-.jumbotron p:last-child {
-  margin-bottom: 0;
+.contact .container .row form .row .col-lg-6 .form-group input:-ms-input-placeholder,
+.contact .container .row form .row .col-lg-6 .form-group textarea:-ms-input-placeholder {
+  color: #a5a5a5;
 }
-
-.jumbotron-heading {
-  font-weight: 300;
+.contact .container .row form .row .col-lg-6 .form-group input::-ms-input-placeholder,
+.contact .container .row form .row .col-lg-6 .form-group textarea::-ms-input-placeholder {
+  color: #a5a5a5;
 }
-
-.jumbotron .container {
-  max-width: 40rem;
+.contact .container .row form .section_button {
+  width: 100%;
+  padding: 0;
+}
+.contact .container .row form .section_button button {
+  width: 160px;
+  height: 40px;
+  border-radius: 0;
+  background-color: #403225;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  float: right;
 }
 
 footer {
