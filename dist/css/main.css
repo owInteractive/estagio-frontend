@@ -178,9 +178,83 @@ button {
 }
 .gallery .container .row .col-sm .light_shadow:hover ~ h2 {
   opacity: 1;
-  animation: fading 1s;
+  animation: fading .7s;
 }
 
+/* ABOUT SECTION */
+.about {
+  height: 350px;
+}
+.about .container {
+  height: 100%;
+}
+.about .container .row {
+  height: 100%;
+}
+.about .container .row .photo {
+  background-image: url('../../assets/imgs/img-makebread.png');
+  background-position: -84px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about .container .row .description {
+  padding: 0 60px;
+}
+.about .container .row .description h3 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+.about .container .row .description p {
+  font-size: .9rem;
+  font-weight: 100;
+  color: #000;
+}
+.about .container .row .description a {
+  font-size: .9rem;
+  font-weight: 400;
+  color: #a67b52;
+  text-decoration: none;
+}
+.about .container .row .description a:hover {
+  border-bottom: 1px solid #a67b52;
+}
+.about .container .row .news {
+  padding: 0 30px;
+}
+.about .container .row .news h3 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #a67b52;
+  opacity: .5;
+  margin-bottom: 1.5rem;
+}
+.about .container .row .news p {
+  font-size: .9rem;
+  font-weight: 100;
+  color: #000;
+  margin-bottom: 20px;
+}
+.about .container .row .news p:last-child {
+  margin-bottom: 0 !important;
+}
+.about .container .row .news p span {
+  font-size: .9rem;
+  font-weight: 600;
+  color: #a67b52;
+}
+.about .container .row .news a {
+  font-size: .9rem;
+  font-weight: 400;
+  color: #a67b52;
+  text-decoration: none;
+}
+.about .container .row .news a:hover {
+  border-bottom: 1px solid #a67b52;
+}
 
 .jumbotron {
   padding-top: 3rem;
