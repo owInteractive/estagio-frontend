@@ -1,3 +1,13 @@
+/* KEYFRAMES */
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 html,
 body {
   background-color: #fff;
@@ -38,7 +48,7 @@ button {
   color: #a67b52;
 }
 
-/* SLIDE CAROUSEL */
+/* CAROUSEL */
 .carousel {
   height: 300px;
 }
@@ -99,6 +109,76 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.gallery {
+
+}
+.gallery .container .row .col-sm h2 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  opacity: 0;
+}
+.gallery .container .row .col-sm {
+  height: 280px;
+  position: relative;
+  top: -90px;
+  right: 0;
+  left: 0;
+}
+.gallery .container .row .col-sm.one {
+  background-image: url('../../assets/imgs/img-breakfast.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .container .row .col-sm.two {
+  background-image: url('../../assets/imgs/img-dreambread.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .container .row .col-sm.three {
+  background-image: url('../../assets/imgs/img-croissant.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .container .row .col-sm.four {
+  background-image: url('../../assets/imgs/img-breadtable.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .container .row .col-sm.five {
+  background-image: url('../../assets/imgs/img-applepie.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .container .row .col-sm .light_shadow {
+  background-color: rgb(255, 255, 255);
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.gallery .container .row .col-sm .light_shadow:hover {
+  opacity: 0;
+}
+.gallery .container .row .col-sm .light_shadow:hover ~ h2 {
+  opacity: 1;
+  animation: fading 1s;
 }
 
 
