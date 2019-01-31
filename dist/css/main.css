@@ -7,8 +7,45 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-/* ================ COMMONS =============== */
+@keyframes ripple_click {
+  0% {
+    -webkit-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: scale(25, 25);
+    -o-transform: scale(25, 25);
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(40, 40);
+    -o-transform: scale(40, 40);
+    transform: scale(40, 40);
+  }
+}
+
+/* =============== MAIN ============== */
 html,
 body {
   background-color: #fff!important;
@@ -32,6 +69,12 @@ button,
 input,
 a {
   outline: 0!important;
+}
+main {
+  margin-top: 19vh;
+}
+button {
+  cursor: pointer!important;
 }
 
 /* ============ MENU NAVIGATION ============ */
@@ -57,10 +100,7 @@ header#navbar.scrollBarAnimation .navbar .container a.navbar-brand img {
 header#navbar.scrollBarAnimation .navbar .container nav.nav a.nav-link {
   font-size: .8rem;
   padding: .5rem 1rem;
-  transition: ease 0.3s;
-}
-header#navbar.scrollBarAnimation .navbar .container nav.nav a.nav-link.search {
-
+  transition: ease 0.2s;
 }
 
 .navbar .container .nav-masthead .nav-link {
@@ -68,21 +108,83 @@ header#navbar.scrollBarAnimation .navbar .container nav.nav a.nav-link.search {
   color: #515151;
   font-weight: 700;
   font-size: .9rem;
+  line-height: 3;
   padding: .5rem 1.5rem;
 }
-.navbar .container .nav-masthead .nav-link.search {
-  border-left: 1px solid #a8a8a8;
+.navbar .container .nav-masthead a {
+  position: relative;
 }
-.navbar .container .nav-masthead .nav-link.search button {
-  border: none;
-  background-color: transparent;
+.navbar .container .nav-masthead a:hover:after {
+  content: '';
+  z-index: 10;
+  background-color: #a67b52;
+  position: absolute;
+  bottom: 8px;
+  width: 80%;
+  left: 9%;
+  height: 5px;
+  border-radius: 200px;
 }
 .navbar .container .nav-masthead .nav-link.active {
   color: #a67b52;
 }
-
-main {
-  margin-top: 19vh;
+.navbar .container .nav-masthead .nav-link.search {
+  border-left: 1px solid #a8a8a8;
+  cursor: inherit;
+}
+.navbar .container .nav-masthead a.search:hover:after {
+  content: '';
+  z-index: 10;
+  background-color: transparent;
+  position: absolute;
+  bottom: 8px;
+  width: 0;
+  left: 0;
+  height: 0;
+  border-radius: 0;
+}
+.navbar .container .nav-masthead .nav-link.search button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  width: 40px;
+  height: 35px;
+  line-height: 1;
+  position: relative;
+  overflow: hidden;
+}
+.navbar .container .nav-masthead .nav-link.search button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: rgba(64, 50, 37, .5);
+  opacity: 0;
+  border-radius: 100%;
+  width: 2px;
+  height: 2px;
+  -webkit-transform: scale(1, 1) translate(-50%);
+  -ms-transform: scale(1, 1) translate(-50%);
+  -o-transform: scale(1, 1) translate(-50%);
+  transform: scale(1, 1) translate(-50%);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.navbar .container .nav-masthead .nav-link.search button:focus:not(:active)::after {
+  -webkit-animation: ripple_click 1s ease-out;
+  animation: ripple_click 1s ease-out;
+}
+.navbar .container .nav-masthead .nav-link.search button:hover {
+  border: 1px solid #a67b52;
+  border-radius: 0;
+  background-color: transparent;
+  -webkit-box-shadow: 0px 0px 20px -6px rgba(0,0,0,.5);
+  -moz-box-shadow: 0px 0px 20px -6px rgba(0,0,0,.5);
+  box-shadow: 0px 0px 20px -6px rgba(0,0,0,.5);
+}
+.navbar .container .nav-masthead .nav-link.search button img {
+  width: 18px;
 }
 
 /* ============ BANNER CAROUSEL ============== */
@@ -437,6 +539,31 @@ main {
   font-weight: 400;
   border: none;
   float: right;
+  position: relative;
+  overflow: hidden;
+}
+.contact .container .row form .section_button button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 100%;
+  width: 5px;
+  height: 5px;
+  -webkit-transform: scale(1, 1) translate(-50%);
+  -ms-transform: scale(1, 1) translate(-50%);
+  -o-transform: scale(1, 1) translate(-50%);
+  transform: scale(1, 1) translate(-50%);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.contact .container .row form .section_button button:focus:not(:active)::after {
+  -webkit-animation: ripple_click 1s ease-out;
+  animation: ripple_click 1s ease-out;
 }
 
 /* ============ FOOTER =========== */
@@ -474,6 +601,13 @@ footer.text-muted .container .col-lg-12.infos .row .sitemap a.nav-link {
   color: #fff;
   font-size: .9rem;
   font-weight: 100;
+  display: table;
+  padding: .5rem 1rem;
+  margin: 0 auto;
+  border-bottom: 1px solid transparent;
+}
+footer.text-muted .container .col-lg-12.infos .row .sitemap a.nav-link:hover {
+  border-bottom: 1px solid #fff;
 }
 footer.text-muted .container .col-lg-12.infos .row .contact_infos {
   display: block;
@@ -511,12 +645,10 @@ footer.text-muted .container .col-lg-12.infos .row .contact_infos .row p a {
   font-size: .9rem;
   font-weight: 100;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
 }
 footer.text-muted .container .col-lg-12.infos .row .contact_infos .row p a:hover {
   border-bottom: 1px solid #fff;
-}
-footer.text-muted .container .col-lg-12.copyright {
-
 }
 footer.text-muted .container .col-lg-12.copyright p.float-left {
   margin-bottom: .25rem;
@@ -527,6 +659,16 @@ footer.text-muted .container .col-lg-12.copyright p.float-right {
 }
 footer.text-muted .container .col-lg-12.copyright p.float-right a img {
   opacity: .4;
+}
+
+/* ============ SEARCH MODAL =========== */
+.modal .modal-dialog .modal-content {
+  border-radius: 0;
+}
+.modal .modal-dialog .modal-content .modal-footer button.btn-secondary {
+  background-color: #403225;
+  border-color: #403225;
+  border-radius: 0;
 }
 
 /* =========== SCROLL =========== */

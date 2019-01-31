@@ -70,34 +70,14 @@
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#about">Sobre</a>
-            <a class="nav-link" href="#">Receitas</a>
+            <a class="nav-link" href="#gallery">Receitas</a>
             <a class="nav-link" href="#news">Notícias</a>
             <a class="nav-link" href="#contact">Contato</a>
-            <a class="nav-link search" href="#">
-              <button type="button" name="button" data-toggle="modal" data-target="#searchModal">
+            <a class="nav-link search">
+              <button type="button" name="searchButton" data-toggle="modal" data-target="#searchModal">
                 <img src="assets/imgs/icon-search.png" alt="">
               </button>
             </a>
-            <!-- SEARCH MODAL -->
-            <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h2 class="modal-title" id="searchModalLabel">Oooops...</h2>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Esta funcionalidade ainda não foi implementada. Peço desculpas pelo inconveniente.</p>
-                    <p>Em breve você poderá utilizar este campo</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
           </nav>
         </div>
       </div>
@@ -262,7 +242,7 @@
                   </div>
                 </div>
                 <div class="section_button col-lg-12">
-                  <button type="submit" name="submitContact">Enviar</button>
+                  <button type="button" name="submitContact">Enviar</button>
                 </div>
               </div>
             </form>
@@ -276,7 +256,9 @@
           <div class="row">
             <div class="col-lg-4 icons">
               <img class="logo" src="assets/imgs/logo-bakery.png" alt="Logo da Yumi's Bakery" title="Yumi's Bakery"><br>
-              <img class="social" src="assets/imgs/icons-social.png" alt="Links das redes sociais da Yumi's Bakery" title="Redes Sociais da Yumi's Bakery">
+              <a href="https://www.linkedin.com/in/cibeleyumi/" target="_blank">
+                <img class="social" src="assets/imgs/icons-social.png" alt="LinkedIn da Yumi's Bakery" title="LinkedIn da Yumi's Bakery">
+              </a>
             </div>
             <div class="col-lg-3 sitemap">
               <a class="nav-link" href="#">Home</a>
@@ -315,6 +297,26 @@
       </div>
     </footer>
 
+    <!-- SEARCH MODAL -->
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="searchModalLabel">Oooops...</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Esta funcionalidade ainda não foi implementada. Peço desculpas pelo inconveniente.</p>
+            <p>Em breve você poderá utilizar este campo</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
