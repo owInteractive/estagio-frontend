@@ -545,6 +545,10 @@ header#navbar.scrollBarAnimation .navbar .container nav.nav a.nav-link {
   float: right;
   position: relative;
   overflow: hidden;
+  transition: ease 0.4s;
+}
+.contact .container .row form .section_button button:hover {
+  background-color: #694d33;
 }
 .contact .container .row form .section_button button:after {
   content: '';
