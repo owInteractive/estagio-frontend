@@ -10,7 +10,7 @@
     <meta name="description" content="A test for a front-end developer spot">
     <meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap,NPM,front-end">
     <meta name="author" content="John Doe">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#a67b52">
     <meta name="apple-mobile-web-app-status-bar-style" content="#a67b52">
     <meta name="msapplication-navbutton-color" content="#a67b52">
@@ -41,37 +41,16 @@
   </head>
   <body>
     <header class="navbar-expand-md fixed-top" id="navbar">
-      <div class="collapse" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About</h4>
-              <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                <li><a href="#" class="text-white">Like on Facebook</a></li>
-                <li><a href="#" class="text-white">Email me</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="navbar">
         <div class="container d-flex justify-content-between">
           <a href="#" class="navbar-brand d-flex align-items-center">
             <img src="assets/imgs/logo-bakery.png" alt="Logo da Yumi's Bakery" title="Yumi's Bakery">
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#about">Sobre</a>
             <a class="nav-link" href="#gallery">Receitas</a>
-            <a class="nav-link" href="#news">Notícias</a>
+            <a class="nav-link" href="#about">Notícias</a>
             <a class="nav-link" href="#contact">Contato</a>
             <a class="nav-link search">
               <button type="button" name="searchButton" data-toggle="modal" data-target="#searchModal">
@@ -103,7 +82,7 @@
         </div>
       </div>
       <!-- GALLERY -->
-      <div class="gallery">
+      <div class="gallery" id="gallery">
         <div class="container">
           <div class="row">
             <div class="col-sm one">
@@ -206,6 +185,7 @@
           </div>
         </div>
       </div>
+      <!-- CONTACT -->
       <div class="contact" id="contact">
         <div class="container">
           <div class="row">
@@ -252,22 +232,22 @@
     </main>
     <footer class="text-muted">
       <div class="container">
-        <div class="col-lg-12 infos">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 infos">
           <div class="row">
-            <div class="col-lg-4 icons">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 icons">
               <img class="logo" src="assets/imgs/logo-bakery.png" alt="Logo da Yumi's Bakery" title="Yumi's Bakery"><br>
               <a href="https://www.linkedin.com/in/cibeleyumi/" target="_blank">
                 <img class="social" src="assets/imgs/icons-social.png" alt="LinkedIn da Yumi's Bakery" title="LinkedIn da Yumi's Bakery">
               </a>
             </div>
-            <div class="col-lg-3 sitemap">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 sitemap">
               <a class="nav-link" href="#">Home</a>
               <a class="nav-link" href="#about">Sobre</a>
-              <a class="nav-link" href="#">Receitas</a>
-              <a class="nav-link" href="#">Notícias</a>
+              <a class="nav-link" href="#gallery">Receitas</a>
+              <a class="nav-link" href="#about">Notícias</a>
               <a class="nav-link" href="#contact">Contato</a>
             </div>
-            <div class="col-lg-5 contact_infos">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5 contact_infos">
               <div class="row">
                 <img src="assets/imgs/icon-phone.png" alt="">
                 <p>

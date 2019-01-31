@@ -251,6 +251,13 @@ header#navbar.scrollBarAnimation .navbar .container nav.nav a.nav-link {
 }
 
 /* ================ GALLERY =================== */
+.gallery .container .row .col-sm {
+  height: 280px;
+  position: relative;
+  top: -90px;
+  right: 0;
+  left: 0;
+}
 .gallery .container .row .col-sm h2 {
   text-transform: uppercase;
   color: #fff;
@@ -263,13 +270,6 @@ header#navbar.scrollBarAnimation .navbar .container nav.nav a.nav-link {
   left: 0;
   z-index: 15;
   opacity: 0;
-}
-.gallery .container .row .col-sm {
-  height: 280px;
-  position: relative;
-  top: -90px;
-  right: 0;
-  left: 0;
 }
 .gallery .container .row .col-sm.one {
   background-image: url('../../assets/imgs/img-breakfast.png');
@@ -447,6 +447,9 @@ header#navbar.scrollBarAnimation .navbar .container nav.nav a.nav-link {
   height: 100%;
   position: relative;
 }
+.partners .container .row .carousel .carousel-inner {
+  height: 20vh;
+}
 .partners .container .row .carousel .carousel-inner .carousel-item .col-3 {
   text-align: center;
   height: 100%;
@@ -461,6 +464,7 @@ header#navbar.scrollBarAnimation .navbar .container nav.nav a.nav-link {
   max-width: 80%;
   width: auto;
   max-height: 80%;
+  margin: auto;
 }
 
 /* =========== CONTACT ============ */
