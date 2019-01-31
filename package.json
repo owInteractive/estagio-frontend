@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/CibaYumi/estagio-frontend#readme",
   "dependencies": {
-    "bootstrap": "^4.2.1"
+    "bootstrap": "^4.2.1",
+    "inputmask": "^4.0.6"
   }
 }
