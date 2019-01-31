@@ -40,8 +40,8 @@
     <link rel="stylesheet" href="dist/css/main.css">
   </head>
   <body>
-    <header>
-      <div class="collapse bg-dark" id="navbarHeader">
+    <header class="navbar-expand-md fixed-top">
+      <div class="collapse" id="navbarHeader">
         <div class="container">
           <div class="row">
             <div class="col-sm-8 col-md-7 py-4">
@@ -59,30 +59,49 @@
           </div>
         </div>
       </div>
-      <div class="navbar navbar-dark shadow-sm">
+      <div class="navbar">
         <div class="container d-flex justify-content-between">
           <a href="#" class="navbar-brand d-flex align-items-center">
-            <img src="assets/imgs/logo-bakery.png" alt="">
+            <img src="assets/imgs/logo-bakery.png" alt="Logo da Yumi's Bakery" title="Yumi's Bakery">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Sobre</a>
+            <a class="nav-link" href="#about">Sobre</a>
             <a class="nav-link" href="#">Receitas</a>
             <a class="nav-link" href="#">Notícias</a>
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="#contact">Contato</a>
             <a class="nav-link search" href="#">
-              <button type="button" name="button">
+              <button type="button" name="button" data-toggle="modal" data-target="#searchModal">
                 <img src="assets/imgs/icon-search.png" alt="">
               </button>
             </a>
+            <!-- SEARCH MODAL -->
+            <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="searchModalLabel">Oooops...</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Esta funcionalidade ainda não foi implementada. Peço desculpas pelo inconveniente.</p>
+                    <p>Em breve você poderá utilizar este campo</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </nav>
         </div>
       </div>
     </header>
-
     <main role="main">
       <!-- BANNER CAROUSEL -->
       <div id="slideCarousel" class="banner carousel slide" data-ride="carousel">
@@ -103,7 +122,6 @@
           </div>
         </div>
       </div>
-
       <!-- GALLERY -->
       <div class="gallery">
         <div class="container">
@@ -131,9 +149,8 @@
           </div>
         </div>
       </div>
-
       <!-- ABOUT -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="row">
             <div class="col-sm-3 photo"></div>
@@ -174,7 +191,6 @@
           </div>
         </div>
       </section>
-
       <!-- PARTNERS -->
       <div class="partners">
         <div class="container">
@@ -210,8 +226,7 @@
           </div>
         </div>
       </div>
-
-      <div class="contact">
+      <div class="contact" id="contact">
         <div class="container">
           <div class="row">
             <h2>Contato</h2>
@@ -255,14 +270,48 @@
         </div>
       </div>
     </main>
-
     <footer class="text-muted">
       <div class="container">
-        <p class="float-right">
-          <a href="#">Back to top</a>
-        </p>
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.2/getting-started/introduction/">getting started guide</a>.</p>
+        <div class="col-lg-12 infos">
+          <div class="row">
+            <div class="col-lg-4 icons">
+              <img class="logo" src="assets/imgs/logo-bakery.png" alt="Logo da Yumi's Bakery" title="Yumi's Bakery"><br>
+              <img class="social" src="assets/imgs/icons-social.png" alt="Links das redes sociais da Yumi's Bakery" title="Redes Sociais da Yumi's Bakery">
+            </div>
+            <div class="col-lg-3 sitemap">
+              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#about">Sobre</a>
+              <a class="nav-link" href="#">Receitas</a>
+              <a class="nav-link" href="#">Notícias</a>
+              <a class="nav-link" href="#contact">Contato</a>
+            </div>
+            <div class="col-lg-5 contact_infos">
+              <div class="row">
+                <img src="assets/imgs/icon-phone.png" alt="">
+                <p>
+                  <span>Contato</span><br>
+                  (11) 99659-2053 | <a href="mailto:contato@cibeleyumi.com.br">contato@cibeleyumi.com.br</a>
+                </p>
+              </div>
+              <div class="row">
+                <img src="assets/imgs/icon-pin.png" alt="">
+                <p>
+                  <span>Localização</span><br>
+                  Ribeirão Preto, SP - Brasil
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 copyright">
+          <p class="float-left">© Yumi's Bakery 2019. Todos os direitos reservados.</p>
+          <p class="float-right">
+            <a href="http://www.owinteractive.com/" target="_blank">
+              <img src="assets/imgs/logo-ow.png" alt="Logo da OW Interactive" title="OW Interactive">
+            </a>
+          </p>
+          <div class="clearfix"></div>
+        </div>
       </div>
     </footer>
 

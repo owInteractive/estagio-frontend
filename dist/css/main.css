@@ -1,4 +1,4 @@
-/* KEYFRAMES */
+/* =========== KEYFRAMES ============= */
 @keyframes fading {
   0% {
     opacity: 0;
@@ -8,11 +8,11 @@
   }
 }
 
+/* ================ COMMONS =============== */
 html,
 body {
   background-color: #fff;
 }
-
 body,
 h1,
 h2,
@@ -28,8 +28,16 @@ input,
 button {
   font-family: 'Montserrat', sans-serif!important;
 }
+button,
+input,
+a {
+  outline: 0!important;
+}
 
-/* MENU NAVIGATION */
+/* ============ MENU NAVIGATION ============ */
+header {
+  background-color: #fff;
+}
 .navbar .container .nav-masthead .nav-link {
   text-transform: uppercase;
   color: #515151;
@@ -48,7 +56,11 @@ button {
   color: #a67b52;
 }
 
-/* BANNER CAROUSEL */
+main {
+  padding-top: 15vh;
+}
+
+/* ============ BANNER CAROUSEL ============== */
 .banner.carousel {
   height: 300px;
 }
@@ -111,7 +123,7 @@ button {
   height: 100%;
 }
 
-/* GALLERY */
+/* ================ GALLERY =================== */
 .gallery .container .row .col-sm h2 {
   text-transform: uppercase;
   color: #fff;
@@ -179,7 +191,7 @@ button {
   animation: fading .7s;
 }
 
-/* ABOUT SECTION */
+/* ============== ABOUT SECTION ============== */
 .about {
   height: 350px;
   margin-bottom: 10vh;
@@ -258,7 +270,7 @@ button {
   border-bottom: 1px solid #a67b52;
 }
 
-/* PARTNERS CAROUSEL */
+/* ============ PARTNERS CAROUSEL ============= */
 .partners {
   padding-top: 5vh;
   padding-bottom: 5vh;
@@ -317,9 +329,9 @@ button {
   max-height: 80%;
 }
 
-/* CONTACT */
+/* =========== CONTACT ============ */
 .contact {
-  padding-top: 10vh;
+  padding: 8vh 0;
 }
 .contact .container .row h2 {
   text-transform: uppercase;
@@ -336,7 +348,7 @@ button {
   text-align: justify;
 }
 .contact .container .row form {
-  margin: 5vh 0;
+  margin: 5vh 0 0;
 }
 .contact .container .row form .row .col-lg-6.left {
   padding-left: 0;
@@ -395,11 +407,110 @@ button {
   float: right;
 }
 
+/* ============ FOOTER =========== */
 footer {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+footer.text-muted {
+  background-color: #403225;
+}
+footer.text-muted .container {
+  padding: 0;
+  width: 1000px;
+  margin: 0 auto;
+}
+footer.text-muted .container .col-lg-12.infos {
+  margin-bottom: 5vh;
+}
+footer.text-muted .container .col-lg-12.infos .row .icons {
+  border-right: 1px solid #6d5a48;
+  text-align: center;
+}
+footer.text-muted .container .col-lg-12.infos .row .icons img.logo {
+  margin-bottom: 3vh;
+}
+footer.text-muted .container .col-lg-12.infos .row .icons img.social {
+  width: 120px;
+}
+footer.text-muted .container .col-lg-12.infos .row .sitemap {
+  border-right: 1px solid #6d5a48;
+  text-align: center;
+}
+footer.text-muted .container .col-lg-12.infos .row .sitemap a.nav-link {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: .9rem;
+  font-weight: 100;
+}
+footer.text-muted .container .col-lg-12.infos .row .contact_infos {
+  display: block;
+}
+footer.text-muted .container .col-lg-12.infos .row .contact_infos img {
+  display: inline-block;
+}
+footer.text-muted .container .col-lg-12.infos .row .contact_infos p {
+  display: inline-block;
+}
+footer.text-muted .container .col-lg-12.infos .row .contact_infos {
+  padding: 0 0 0 50px;
+}
+footer.text-muted .container .col-lg-12.infos .row .contact_infos .row {
+  margin-bottom: 30px;
+}
+footer.text-muted .container .col-lg-12.infos .row .contact_infos .row img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+footer.text-muted .container .col-lg-12.infos .row .contact_infos .row p {
+  color: #fff;
+  font-size: .9rem;
+  font-weight: 100;
+}
+footer.text-muted .container .col-lg-12.infos .row .contact_infos .row p span {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: .9rem;
+  font-weight: 600;
+}
+footer.text-muted .container .col-lg-12.infos .row .contact_infos .row p a {
+  color: #fff;
+  font-size: .9rem;
+  font-weight: 100;
+  text-decoration: none;
+}
+footer.text-muted .container .col-lg-12.infos .row .contact_infos .row p a:hover {
+  border-bottom: 1px solid #fff;
+}
+footer.text-muted .container .col-lg-12.copyright {
+
+}
+footer.text-muted .container .col-lg-12.copyright p.float-left {
+  margin-bottom: .25rem;
+  color: #6d5a48;
+}
+footer.text-muted .container .col-lg-12.copyright p.float-right {
+  margin-bottom: .25rem;
+}
+footer.text-muted .container .col-lg-12.copyright p.float-right a img {
+  opacity: .4;
 }
 
-footer p {
-  margin-bottom: .25rem;
+/* =========== SCROLL =========== */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: #b9b9b9;
+  opacity: .8;
+  border-radius: 200px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #828282;
+  opacity: .8;
 }
