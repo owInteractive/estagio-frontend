@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="pt">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="A test for a front-end developer spot">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap,NPM,front-end">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#a67b52">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#a67b52">
+    <meta name="msapplication-navbutton-color" content="#a67b52">
+    <title>Yumi's Bakery</title>
+
+    <!-- FAVICON TAGS -->
+    <!--[if IE]><link rel="shortcut icon" href="assets/imgs/favicon.ico"><![endif]-->
+    <link rel="icon" href="assets/imgs/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/imgs/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/imgs/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/imgs/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/imgs/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/imgs/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/imgs/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/imgs/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/imgs/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/imgs/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/imgs/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/imgs/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/imgs/favicon-16x16.png">
+    <link rel="manifest" href="assets/imgs/manifest.json">
+
+    <!-- CSS AND FONTS TAGS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/main.css">
+  </head>
+  <body>
+    <header class="navbar-expand-md fixed-top" id="navbar">
+      <div class="navbar">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <img src="assets/imgs/logo-bakery.png" alt="Logo da Yumi's Bakery" title="Yumi's Bakery">
+          </a>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#about">Sobre</a>
+            <a class="nav-link" href="#gallery">Receitas</a>
+            <a class="nav-link" href="#about">Notícias</a>
+            <a class="nav-link" href="#contact">Contato</a>
+            <a class="nav-link search">
+              <button type="button" name="searchButton" data-toggle="modal" data-target="#searchModal">
+                <img src="assets/imgs/icon-search.png" alt="">
+              </button>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main role="main">
+      <!-- BANNER CAROUSEL -->
+      <div id="slideCarousel" class="banner carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#slideCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#slideCarousel" data-slide-to="1"></li>
+          <li data-target="#slideCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active first">
+            <div class="bg_shadow"></div>
+          </div>
+          <div class="carousel-item second">
+            <div class="bg_shadow"></div>
+          </div>
+          <div class="carousel-item third">
+            <div class="bg_shadow"></div>
+          </div>
+        </div>
+      </div>
+      <!-- GALLERY -->
+      <div class="gallery" id="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm one">
+              <div class="light_shadow"></div>
+              <h2>Breakfast</h2>
+            </div>
+            <div class="col-sm two">
+              <div class="light_shadow"></div>
+              <h2>Muffin</h2>
+            </div>
+            <div class="col-sm three">
+              <div class="light_shadow"></div>
+              <h2>Croissant</h2>
+            </div>
+            <div class="col-sm four">
+              <div class="light_shadow"></div>
+              <h2>Italian bread</h2>
+            </div>
+            <div class="col-sm five">
+              <div class="light_shadow"></div>
+              <h2>Apple pie</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ABOUT -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 photo"></div>
+            <div class="col-sm-5 description">
+              <h3>Sobre a Bakery</h3>
+              <p>Ut vitae volutpat risus. Nam vitae congue odio, mattis dignissim neque. Nam eros sapien, semper in pellentesque ut, suscipit eu nunc. Donec malesuada egestas ligula, non malesuada sapien suscipit ut.</p>
+              <p>Praesent sed ipsum ullamcorper purus scelerisque laoreet. Nulla lobortis ex eu mi accumsan, non hendrerit ex rhoncus. Etiam auctor libero porttitor tellus imperdiet consequat. Nam porttitor diam in eleifend fringilla.</p>
+              <a href="https://www.linkedin.com/in/cibeleyumi/" target="_blank">
+                Conheça mais
+                <img src="assets/imgs/arrow-right.png" alt="Imagem de seta para direita para conhecer mais sobre a Yumi's Bakery" title="Conheça mais sobre a Yumi's Bakery" >
+              </a>
+            </div>
+            <div class="col-sm-4 news">
+              <h3>Últimas Notícias</h3>
+              <p>
+                <a href="#">
+                  <span>20/01/2017</span>
+                </a><br>
+                Nulla commodo lorem at elit scelerisque mollis. Maecenas et libero sed purus...
+              </p>
+              <p>
+                <a href="#">
+                  <span>20/01/2017</span>
+                </a><br>
+                Nulla commodo lorem at elit scelerisque mollis. Maecenas et libero sed purus...
+              </p>
+              <p>
+                <a href="#">
+                  <span>20/01/2017</span>
+                </a><br>
+                Nulla commodo lorem at elit scelerisque mollis. Maecenas et libero sed purus...
+              </p>
+              <a href="" class="btn_list">
+                Lista completa
+                <img src="assets/imgs/arrow-right.png" alt="Imagem de seta para direita para ver lista completa de notícias" title="Ver lista completa de notícias" >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PARTNERS -->
+      <div class="partners">
+        <div class="container">
+          <div class="row">
+            <h2>Parceiros</h2>
+            <div id="partnersCarousel" class="carousel slide w-100" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#partnersCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#partnersCarousel" data-slide-to="1"></li>
+                <li data-target="#partnersCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item row no-gutters active">
+                  <div class="col-3 float-left"><img class="img-fluid" src="assets/imgs/logo-restaurant.png"></div>
+                  <div class="col-3 float-left"><img class="img-fluid" src="assets/imgs/logo-fd.png"></div>
+                  <div class="col-3 float-left"><img class="img-fluid" src="assets/imgs/logo-food.png"></div>
+                  <div class="col-3 float-left"><img class="img-fluid" src="assets/imgs/logo-goodfood.png"></div>
+                </div>
+                <div class="carousel-item row no-gutters">
+                  <div class="col-3 float-left"><img class="img-fluid" src="assets/imgs/logo-goodfood.png"></div>
+                  <div class="col-3 float-left"><img class="img-fluid" src="assets/imgs/logo-food.png"></div>
+                  <div class="col-3 float-left"><img class="img-fluid" src="assets/imgs/logo-fd.png"></div>
+                  <div class="col-3 float-left"><img class="img-fluid" src="assets/imgs/logo-restaurant.png"></div>
+                </div>
+                <div class="carousel-item row no-gutters">
+                  <div class="col-3 float-left"><img class="img-fluid" src="assets/imgs/logo-fd.png"></div>
+                  <div class="col-3 float-left"><img class="img-fluid" src="assets/imgs/logo-restaurant.png"></div>
+                  <div class="col-3 float-left"><img class="img-fluid" src="assets/imgs/logo-goodfood.png"></div>
+                  <div class="col-3 float-left"><img class="img-fluid" src="assets/imgs/logo-food.png"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CONTACT -->
+      <div class="contact" id="contact">
+        <div class="container">
+          <div class="row">
+            <h2>Contato</h2>
+            <p>Ut vitae volutpat risus. Nam vitae congue odio, mattis dignissim neque. Nam eros sapien, semper in pellentesque ut, suscipit eu nunc. Donec malesuada egestas ligula, non malesuada sapien suscipit ut.</p>
+            <form class="col-lg-12">
+              <div class="row">
+                <div class="col-lg-6 left">
+                  <div class="form-group">
+                    <label for="name">Nome*</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nome" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="city">Cidade</label>
+                    <input type="text" class="form-control" id="city" placeholder="Cidade">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Telefone*</label>
+                    <input type="phone" class="form-control bfh-phone" id="phone" placeholder="(99) 9 9999-9999" required>
+                  </div>
+                </div>
+                <div class="col-lg-6 right">
+                  <div class="form-group">
+                    <label for="subject">Assunto*</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Assunto" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Mensagem*</label>
+                    <textarea class="form-control" id="message" rows="8" placeholder="Digite aqui a sua mensagem" required></textarea>
+                  </div>
+                </div>
+                <div class="section_button col-lg-12">
+                  <button type="submit" name="submitContact">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-muted">
+      <div class="container">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 infos">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 icons">
+              <img class="logo" src="assets/imgs/logo-bakery.png" alt="Logo da Yumi's Bakery" title="Yumi's Bakery"><br>
+              <a href="https://www.linkedin.com/in/cibeleyumi/" target="_blank">
+                <img class="social" src="assets/imgs/icons-social.png" alt="LinkedIn da Yumi's Bakery" title="LinkedIn da Yumi's Bakery">
+              </a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 sitemap">
+              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#about">Sobre</a>
+              <a class="nav-link" href="#gallery">Receitas</a>
+              <a class="nav-link" href="#about">Notícias</a>
+              <a class="nav-link" href="#contact">Contato</a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5 contact_infos">
+              <div class="row">
+                <img src="assets/imgs/icon-phone.png" alt="">
+                <p>
+                  <span>Contato</span><br>
+                  (11) 99659-2053 | <a href="mailto:contato@cibeleyumi.com.br">contato@cibeleyumi.com.br</a>
+                </p>
+              </div>
+              <div class="row">
+                <img src="assets/imgs/icon-pin.png" alt="">
+                <p>
+                  <span>Localização</span><br>
+                  <a href="https://goo.gl/maps/15oCK9PTeLK2" target="_blank">Ribeirão Preto, SP - Brasil</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 copyright">
+          <p class="float-left">© Yumi's Bakery 2019. Todos os direitos reservados.</p>
+          <p class="float-right">
+            <a href="http://www.owinteractive.com/" target="_blank">
+              <img src="assets/imgs/logo-ow.png" alt="Logo da OW Interactive" title="OW Interactive">
+            </a>
+          </p>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SEARCH MODAL -->
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="searchModalLabel">Oooops...</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Esta funcionalidade ainda não foi implementada. Peço desculpas pelo inconveniente.</p>
+            <p>Em breve você poderá utilizar este campo</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/inputmask/dist/inputmask/inputmask.js"></script>
+    <script src="node_modules/inputmask/dist/inputmask/jquery.inputmask.js"></script>
+    <script type="text/javascript" src="dist/js/main.js"></script>
+  </body>
+</html>
